@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+*{
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Share Tech Mono', monospace;
+  padding: 50px;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  color: #333;
+}
+.signal-master{
+  width: auto;
+  height: auto;
+  margin: 100px auto;
+  position: relative;
+}
+
+.signal{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 50%;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%,-50%);
+  -webkit-transform: translate(50%,-50%);
+  opacity: 0;
+  transition: all 4000ms ease-in-out;
+  -webkit-transition: all 4000ms ease-in-out;
+  -webkit-animation: signal 2s infinite alternate ease-in-out;
+	-moz-animation: signal 2s infinite alternate ease-in-out;
+	-ms-animation: signal 2s infinite alternate ease-in-out;
+	-o-animation: signal 2s infinite alternate ease-in-out;
+	animation: signal 2s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes signal {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@-moz-keyframes signal {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@-o-keyframes signal {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes signal {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
